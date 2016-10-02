@@ -16,8 +16,11 @@ app.use(express.static(__dirname + '/public'));
 console.log('server running');
 
 var chat_history = [];
+var clear_all =[];
 
 io.on('connection', function(socket){
+  //clear chat for mobile users returning to tab, to avoid dupe messages
+  socket.emit('update_chat', {messages: clear_all});
   //show chat history for new user
   for(var i in chat_history){
     socket.emit('update_chat', {messages: chat_history[i]});
