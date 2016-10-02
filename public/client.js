@@ -22,9 +22,9 @@
 
   socket.on('user_count', function(data) {
     if(data.users === 1){
-      userCount.innerHTML = 'There is currently ' + data.users + ' user in chat.';
+      userCount.innerHTML = 'THERE IS CURRENTLY <span>' + data.users + ' USER</span> IN CHAT';
     }else{
-      userCount.innerHTML = 'There are currently ' + data.users + ' users in chat.';
+      userCount.innerHTML = 'THERE ARE CURRENTLY <span>' + data.users + ' USERS</span> IN CHAT';
       console.log('A user has connected.');
       console.log(data.users);
     }
@@ -32,9 +32,9 @@
 
   socket.on('user_count', function(data) {
     if(data.users === 1){
-      userCount.innerHTML = 'There is currently ' + data.users + ' user in chat.';
+      userCount.innerHTML = 'THERE IS CURRENTLY <span>' + data.users + ' USER</span> IN CHAT';
     }else{
-      userCount.innerHTML = 'There are currently ' + data.users + ' users in chat.';
+      userCount.innerHTML = 'THERE ARE CURRENTLY <span>' + data.users + ' USERS</span> IN CHAT';
       console.log('A user has disconnected.');
       console.log(data.users);
     }

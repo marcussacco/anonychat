@@ -3,14 +3,19 @@
   <head>
     <title>Anon Chat</title>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
     <script src="socket.io/socket.io.js"></script>
   </head>
   <body>
     <div id="mainContainer">
       <div id="chatContainer">
-        <p id="userCount"></p>
+        <div id="headShell">
+          <div id="headCore">
+            <p id="userCount"></p>
+          </div>
+        </div>
         <div id="chatWindow">
         </div>
         <input type="text" id="chatInput" placeholder="say something" onkeypress="return sender(event)"/>
