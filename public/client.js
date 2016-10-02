@@ -21,15 +21,23 @@
   });
 
   socket.on('user_count', function(data) {
-    userCount.innerHTML = 'There are currently ' + data.users + ' in chat.';
-    console.log('A user has connected.');
-    console.log(data.users)
+    if(data.users === 1){
+      userCount.innerHTML = 'There is currently ' + data.users + ' user in chat.';
+    }else{
+      userCount.innerHTML = 'There are currently ' + data.users + ' users in chat.';
+      console.log('A user has connected.');
+      console.log(data.users);
+    }
   });
 
   socket.on('user_count', function(data) {
-    userCount.innerHTML = 'There are currently ' + data.users + ' in chat.';
-    console.log('A user has disconnected.');
-    console.log(data.users);
+    if(data.users === 1){
+      userCount.innerHTML = 'There is currently ' + data.users + ' user in chat.';
+    }else{
+      userCount.innerHTML = 'There are currently ' + data.users + ' users in chat.';
+      console.log('A user has disconnected.');
+      console.log(data.users);
+    }
   });
 
 
