@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anon Chat</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <p id="userCount"></p>
+      <div id="chatContainer">
+        <div id="chatWindow">
+        </div>
+        <input type="text" id="chatInput" placeholder="say something" onkeypress="return sender(event)"/>
+      </div>
+    </div>
+    <script src="client.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  color: #F8E5EE;
+  width: 100vw;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1em;
+  background-color: #211103;
+}
+
+#mainContainer{
+  width: 66%;
+  margin: 0 auto;
+}
+
+#chatContainer{
+  margin: 0 auto;
+}
+
+#chatWindow{
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+}
+
+#chatInput{
+  color: #F8E5EE;
+  background-color: #3D1308;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1em;
+  width: 99.2%;
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.userMessage{
+  background-color: #3D1308;
+  max-width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+.userMessage:nth-child(odd){
+  background-color: #351117;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+::-webkit-input-placeholder {
+   color: #5d1d0d;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #5d1d0d;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #5d1d0d;
+}
+
+:-ms-input-placeholder {
+   color: #5d1d0d;
+}
